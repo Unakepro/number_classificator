@@ -108,9 +108,9 @@ int main() {
     log_regression lg(10, 785);
 
     lg.loadModel("mnist.model");
-    //lg.compile(x_train, y_train, 0, 0.0001);
+    lg.compile(x_train, y_train, 0, 0.0001);
     //lg.train(10, 0.5);
-    lg.saveModel("mnist.model");
+    //lg.saveModel("mnist.model");
 
     Eigen::MatrixXd x_test(785, 10000);
 
@@ -119,7 +119,7 @@ int main() {
 
     lg.get_accuracy(x_test, y_test);
    
-    sf::RenderWindow window(sf::VideoMode(500, 280), "28x28 Drawing Input");
+    sf::RenderWindow window(sf::VideoMode(500, 280), "Drawing input");
     
     sf::RenderTexture drawingCanvas;
     drawingCanvas.create(280, 280);

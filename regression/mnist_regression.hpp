@@ -1,3 +1,6 @@
+#ifndef REGRESSION
+#define REGRESSION
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -34,3 +37,5 @@ private:
     Eigen::MatrixXd log_reg(Eigen::MatrixXd& X);
     double log_loss();
 };
+
+#endif

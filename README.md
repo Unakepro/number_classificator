@@ -15,14 +15,17 @@ This recognition system is based on logistic regression trained on the MNIST dat
 A multi-layer neural network would be a better choice for achieving higher accuracy, but this model was created just to showcase the use C++ in implementing basic machine learning concepts, obviously MNIST resolution is lower, so we have to compress our drawen image and logistic regression is definetly not the best choice, but I'm just trying to show that you can relativly simply implement lositic regression via c++ and do a pretty cool thing with it.
 
 ## Configuration
-Model has 785 parameters - 784 for each pixes and the last one for bias.
-Initial parameters was set random from 0 to 0.0001. 
-Learning rate is 0.5 and around 8000 epoch was taken to train it.
+
+The model consists of 785 parameters: 784 parameters correspond to each pixel in the input image, and last one is a bias.
+
+- **Parameter Initialization**: The initial parameters were randomly set within the range of 0 to 0.0001.
+- **Learning Rate**: The learning rate is set to 0.5.
+- **Training Epochs**: The model was trained for approximately 8,000 epochs.
 
 
 ## Prerequisites
 
-Before you begin, you should install the (sfml library)[https://www.sfml-dev.org/] 
+Before you begin, you should install the [sfml library][https://www.sfml-dev.org/] 
 
 ## Installation
 
@@ -49,6 +52,10 @@ make
 cd ..
 ./build/bin/ProjExec
 ```
+
+## Demo
+
+
 
 
 ## License

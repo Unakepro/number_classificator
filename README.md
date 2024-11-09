@@ -25,7 +25,7 @@ The model consists of 785 parameters: 784 parameters correspond to each pixel in
 
 ## Prerequisites
 
-Before you begin, you should install the [sfml library][https://www.sfml-dev.org/] 
+Before you begin, you should install the [SFML](https://www.sfml-dev.org/) graphic library.
 
 ## Installation
 
